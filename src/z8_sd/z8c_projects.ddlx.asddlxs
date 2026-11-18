@@ -1,0 +1,137 @@
+@Metadata.layer: #CORE
+
+@UI.headerInfo: { 
+  typeName: '프로젝트',                  
+  typeNamePlural: '프로젝트 목록',         
+  title: { type: #STANDARD, value: 'pro_id' }, 
+  description: { type: #STANDARD, value: 'name' } 
+}
+
+@UI.presentationVariant: [{
+  sortOrder: [
+    { by: 'sdate', direction: #ASC },   // 1차 정렬: 예정 시작일 (빠른 날짜부터)
+    { by: 'status', direction: #ASC } // 2차 정렬: 진행 상태 (20->30->40)
+  ]
+}]
+
+annotate entity z8c_projects
+    with 
+{
+    @UI.facet: [ 
+        // 1. 프로젝트 상세 정보 영역
+        { id: 'Project_List', 
+         label : '프로젝트 리스트',
+         purpose: #STANDARD, 
+         type: #IDENTIFICATION_REFERENCE, 
+         position: 10 },
+         
+         // 2. 하단 배정 인력 테이블 영역 (자식 뷰 연결!)
+        { id: 'Tech_List',
+          label: '배정 인력',
+          purpose: #STANDARD,
+          type: #LINEITEM_REFERENCE,
+          targetElement: '_TechHist',
+          position: 20 },
+          
+          // 3. 배정 인력 탭 바로 뒤에 '투입 자재' 탭을 만듭니다.
+          {
+            id: 'Materials',
+            purpose: #STANDARD,
+            type: #LINEITEM_REFERENCE,
+            label: '투입 자재',
+            position: 30,
+            targetElement: '_Materials' // Projection View에서 열어둔 이름
+          }
+    ]
+    
+
+   
+    @EndUserText.label : '프로젝트 번호' 
+    @UI.selectionField: [{ position : 10 }]
+//  @UI.lineItem:       [ { position: 10 } ]
+    @UI.identification: [ { position: 10 } ]
+    @UI.lineItem: [ 
+        { position: 10 }
+//        { type: #FOR_ACTION, position : 11, dataAction: 'startWork', label: '작업 시작' },
+//        { type: #FOR_ACTION, position : 12, dataAction: 'completeInstall', label: '설치 완료' },
+//        { type: #FOR_ACTION, position : 13, dataAction: 'completeInspect', label: '고객 검수' }
+    ]
+    @UI.identification: [ 
+        { type: #FOR_ACTION, dataAction: 'startWork', label: '작업 시작' },
+        { type: #FOR_ACTION, dataAction: 'completeInstall', label: '설치 완료' },
+        { type: #FOR_ACTION, dataAction: 'completeInspect', label: '고객 검수' },
+        { type: #FOR_ACTION, dataAction: 'rejectInspect',   label: '검수 반려' }
+    ]
+  pro_id;
+  
+  /*
+  @EndUserText.label: '판매 오더(SO)'
+  @UI.identification: [ { position: 15 } ]
+  vbeln;
+  */
+  
+  @EndUserText.label : '진행 상태' 
+  @UI.selectionField: [{ position : 20 }]
+  @UI.lineItem:       [ { position: 20, cssDefault.width: '10rem'} ]
+  @UI.identification: [ { position: 20 } ]
+  @UI.textArrangement: #TEXT_ONLY
+  status;
+    
+    @EndUserText.label : '자재 준비 상태' 
+    @UI.selectionField: [{ position : 25 }]
+    @UI.lineItem:       [ { position: 25, cssDefault.width: '8rem' } ] 
+    @UI.identification: [ { position: 25 } ]
+    @UI.textArrangement: #TEXT_ONLY
+    del_status;
+    
+  @EndUserText.label : '지사' 
+  @UI.selectionField: [{ position : 30 }]
+  @UI.lineItem:       [ { position: 30, cssDefault.width: '8rem' } ]
+  @UI.identification: [ { position: 30 } ]
+  @UI.textArrangement: #TEXT_ONLY
+  //branch;
+  branch_name;
+    
+  @EndUserText.label : '고객' 
+  @UI.selectionField: [{ position : 40 }]
+  @UI.lineItem:       [ { position: 40, cssDefault.width: '8rem' } ]
+  @UI.identification: [ { position: 40 } ]
+  name;
+    
+  @EndUserText.label : '설치 주소' 
+  @UI.lineItem:       [ { position: 50 } ]
+  @UI.identification: [ { position: 50 } ]
+  address;
+    
+  @EndUserText.label : '예정 시작일' 
+  @UI.selectionField: [{ position : 50 }]
+  @UI.lineItem:       [ { position: 5 } ]
+  @UI.identification: [ { position: 60 } ]
+  sdate;
+    
+  @EndUserText.label : '예정 종료일' 
+  @UI.lineItem:       [ { position: 8 } ]
+  @UI.identification: [ { position: 70 } ]
+  edate;
+  
+  
+  @EndUserText.label : '실제 시작일' 
+  @UI.lineItem:       [ { position: 80 } ]
+  @UI.identification: [ { position: 80 } ]
+  real_sdate;
+    
+  @EndUserText.label : '실제 종료일' 
+  @UI.lineItem:       [ { position: 90 } ]
+  @UI.identification: [ { position: 90 } ]
+  real_edate;
+  
+  // 숨김 제어용 필드는 화면에 보이지 않게 숨김 처리
+  @UI.hidden: true
+  hide_start_btn;
+  @UI.hidden: true
+  hide_comp_btn;
+  @UI.hidden: true
+  hide_insp_btn;
+  @UI.hidden : true
+  hide_rej_btn;
+}

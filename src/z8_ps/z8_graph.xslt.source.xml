@@ -1,0 +1,662 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates">
+
+<tt:root name="ROOT"/>
+
+<tt:template>
+<?xml version="1.0" encoding="utf-8"?>
+<SAPChartCustomizing version="1.1">
+ <GlobalSettings>
+  <Dimension>Two</Dimension>
+  <TransparentColor>@7</TransparentColor>
+  <CanvasColor>@7</CanvasColor>
+  <ColorPalette>Streamline</ColorPalette>
+  <ColorOrder>Default</ColorOrder>
+  <Gaps>Void</Gaps>
+  <EqualizeValueAxes>false</EqualizeValueAxes>
+  <Mirrored>Always</Mirrored>
+  <Defaults>
+   <ChartType>Lines</ChartType>
+   <FontFamily>Arial</FontFamily>
+  </Defaults>
+  <Colors>
+   <Color id="1">RGB(0,0,0)</Color>
+   <Color id="2">RGB(0,0,0)</Color>
+   <Color id="3">None</Color>
+   <Color id="4">RGB(0,0,0)</Color>
+   <Color id="5">RGB(255,255,255)</Color>
+   <Color id="6">RGB(255,255,255)</Color>
+   <Color id="7">RGB(255,255,255)</Color>
+   <Color id="8">RGB(255,0,255)</Color>
+   <Color id="9">RGB(246,235,149)</Color>
+   <Color id="10">RGB(244,230,112)</Color>
+   <Color id="11">RGB(238,222,65)</Color>
+   <Color id="12">RGB(222,203,37)</Color>
+   <Color id="13">RGB(202,180,0)</Color>
+   <Color id="14">RGB(245,242,226)</Color>
+   <Color id="15">RGB(247,179,87)</Color>
+   <Color id="16">RGB(0,0,0)</Color>
+   <Color id="17">RGB(161,232,243)</Color>
+   <Color id="18">RGB(92,212,230)</Color>
+   <Color id="19">RGB(0,179,213)</Color>
+   <Color id="20">RGB(0,132,163)</Color>
+   <Color id="21">RGB(0,92,128)</Color>
+   <Color id="22">RGB(245,238,217)</Color>
+   <Color id="23">RGB(247,181,91)</Color>
+   <Color id="24">RGB(153,255,153)</Color>
+   <Color id="25">RGB(161,227,157)</Color>
+   <Color id="26">RGB(114,226,116)</Color>
+   <Color id="27">RGB(64,212,76)</Color>
+   <Color id="28">RGB(0,183,34)</Color>
+   <Color id="29">RGB(0,166,0)</Color>
+   <Color id="30">RGB(245,233,208)</Color>
+   <Color id="31">RGB(247,186,102)</Color>
+   <Color id="32">RGB(255,204,51)</Color>
+   <Color id="33">RGB(255,138,144)</Color>
+   <Color id="34">RGB(247,77,97)</Color>
+   <Color id="35">RGB(231,27,66)</Color>
+   <Color id="36">RGB(207,0,39)</Color>
+   <Color id="37">RGB(174,0,18)</Color>
+   <Color id="38">RGB(245,228,195)</Color>
+   <Color id="39">RGB(247,190,111)</Color>
+   <Color id="40">RGB(255,102,102)</Color>
+   <Color id="41">RGB(255,191,119)</Color>
+   <Color id="42">RGB(255,165,68)</Color>
+   <Color id="43">RGB(248,126,34)</Color>
+   <Color id="44">RGB(245,102,0)</Color>
+   <Color id="45">RGB(226,88,0)</Color>
+   <Color id="46">RGB(246,222,171)</Color>
+   <Color id="47">RGB(246,196,124)</Color>
+   <Color id="48">RGB(153,153,0)</Color>
+   <Color id="49">RGB(212,212,212)</Color>
+   <Color id="50">RGB(187,187,187)</Color>
+   <Color id="51">RGB(161,161,161)</Color>
+   <Color id="52">RGB(137,137,137)</Color>
+   <Color id="53">RGB(125,125,125)</Color>
+   <Color id="54">RGB(246,217,171)</Color>
+   <Color id="55">RGB(246,202,137)</Color>
+   <Color id="56">RGB(255,235,0)</Color>
+   <Color id="57">RGB(149,169,212)</Color>
+   <Color id="58">RGB(111,149,207)</Color>
+   <Color id="59">RGB(80,128,201)</Color>
+   <Color id="60">RGB(41,86,178)</Color>
+   <Color id="61">RGB(32,49,145)</Color>
+   <Color id="62">RGB(246,212,161)</Color>
+   <Color id="63">RGB(246,207,149)</Color>
+   <Color id="64">RGB(230,0,0)</Color>
+  </Colors>
+ </GlobalSettings>
+ <Layout>
+  <Automatic>true</Automatic>
+  <LegendOnly>false</LegendOnly>
+  <Title>
+   <Top>0.896287</Top>
+   <Left>1.12</Left>
+   <Bottom>3.07298</Bottom>
+   <Right>98.88</Right>
+  </Title>
+  <Subtitle>
+   <Top>0</Top>
+   <Left>0</Left>
+   <Bottom>0</Bottom>
+   <Right>0</Right>
+  </Subtitle>
+  <ChartType>
+   <Top>0</Top>
+   <Left>0</Left>
+   <Bottom>100</Bottom>
+   <Right>100</Right>
+  </ChartType>
+  <Legend>
+   <Top>95.9027</Top>
+   <Left>7.04</Left>
+   <Bottom>99.1037</Bottom>
+   <Right>98.88</Right>
+  </Legend>
+ </Layout>
+ <Elements>
+  <ChartElements>
+   <Background>
+    <Visibility>true</Visibility>
+    <Extension/>
+    <Insets>3</Insets>
+    <Color>@6</Color>
+    <SecondaryColor>RGB(0,0,0)</SecondaryColor>
+    <Pattern>None</Pattern>
+    <Gradient>None</Gradient>
+    <Texture>None</Texture>
+    <TextureMode>Tile</TextureMode>
+    <Transparency>0</Transparency>
+    <BorderColor>None</BorderColor>
+    <BorderStyle>Solid</BorderStyle>
+    <BorderWidth>1</BorderWidth>
+   </Background>
+   <PlotArea>
+    <Visibility>true</Visibility>
+    <Extension/>
+    <Color>@5</Color>
+    <SecondaryColor>RGB(0,0,0)</SecondaryColor>
+    <Pattern>None</Pattern>
+    <Gradient>None</Gradient>
+    <Texture>None</Texture>
+    <TextureMode>Tile</TextureMode>
+    <Transparency>0</Transparency>
+    <BorderColor>@4</BorderColor>
+    <BorderStyle>Solid</BorderStyle>
+    <BorderWidth>1</BorderWidth>
+   </PlotArea>
+   <Title>
+    <Visibility>true</Visibility>
+    <Extension>href=&quot;sapevent:onclick?Title&quot;</Extension>
+    <Caption>Caffeine Consumption</Caption>
+    <Alignment>North</Alignment>
+    <AlignToPlot>false</AlignToPlot>
+    <Insets>4</Insets>
+    <Text>
+     <FontFamily>Automatic</FontFamily>
+     <Color>@16</Color>
+     <Size>8</Size>
+     <Style>Normal</Style>
+     <HorizontalPosition>Default</HorizontalPosition>
+     <VerticalPosition>Default</VerticalPosition>
+     <Direction>Default</Direction>
+    </Text>
+    <Color>None</Color>
+    <SecondaryColor>RGB(0,0,0)</SecondaryColor>
+    <Pattern>None</Pattern>
+    <Gradient>None</Gradient>
+    <Texture>None</Texture>
+    <TextureMode>Tile</TextureMode>
+    <Transparency>0</Transparency>
+    <BorderColor>None</BorderColor>
+    <BorderStyle>Solid</BorderStyle>
+    <BorderWidth>1</BorderWidth>
+   </Title>
+   <Subtitle>
+    <Visibility>true</Visibility>
+    <Extension/>
+    <Caption/>
+    <Alignment>North</Alignment>
+    <AlignToPlot>false</AlignToPlot>
+    <Insets>4</Insets>
+    <Text>
+     <FontFamily>Automatic</FontFamily>
+     <Color>@16</Color>
+     <Size>8</Size>
+     <Style>Normal</Style>
+     <HorizontalPosition>Default</HorizontalPosition>
+     <VerticalPosition>Default</VerticalPosition>
+     <Direction>Default</Direction>
+    </Text>
+    <Color>None</Color>
+    <SecondaryColor>RGB(0,0,0)</SecondaryColor>
+    <Pattern>None</Pattern>
+    <Gradient>None</Gradient>
+    <Texture>None</Texture>
+    <TextureMode>Tile</TextureMode>
+    <Transparency>0</Transparency>
+    <BorderColor>None</BorderColor>
+    <BorderStyle>Solid</BorderStyle>
+    <BorderWidth>1</BorderWidth>
+   </Subtitle>
+   <Legend>
+    <Visibility>true</Visibility>
+    <Extension/>
+    <Caption/>
+    <CompleteCaption>false</CompleteCaption>
+    <Alignment>South</Alignment>
+    <AlignToPlot>true</AlignToPlot>
+    <Insets>4</Insets>
+    <Order>Ascending</Order>
+    <OrderByRow>false</OrderByRow>
+    <OrderByData>false</OrderByData>
+    <MoreInfo>false</MoreInfo>
+    <Text>
+     <FontFamily>Automatic</FontFamily>
+     <Color>@16</Color>
+     <Size>9</Size>
+     <Style>Normal</Style>
+    </Text>
+    <Color>None</Color>
+    <SecondaryColor>RGB(0,0,0)</SecondaryColor>
+    <Pattern>None</Pattern>
+    <Gradient>None</Gradient>
+    <Texture>None</Texture>
+    <TextureMode>Tile</TextureMode>
+    <Transparency>0</Transparency>
+    <BorderColor>None</BorderColor>
+    <BorderStyle>Solid</BorderStyle>
+    <BorderWidth>1</BorderWidth>
+    <SashColor>RGB(0,0,0)</SashColor>
+    <SashStyle>Solid</SashStyle>
+    <SashWidth>1</SashWidth>
+   </Legend>
+  </ChartElements>
+  <ChartTypes>
+   <Lines>
+    <Visibility>true</Visibility>
+    <Extension/>
+    <CenteredPointCu>true</CenteredPointCu>
+   </Lines>
+  </ChartTypes>
+  <ChartAxes>
+   <CategoryAxis>
+    <Visibility>true</Visibility>
+    <Extension/>
+    <Minimum>1</Minimum>
+    <MinimumAutomatic>true</MinimumAutomatic>
+    <Maximum>4</Maximum>
+    <MaximumAutomatic>true</MaximumAutomatic>
+    <Order>Ascending</Order>
+    <VariableCategories>false</VariableCategories>
+    <AxisType>Flat</AxisType>
+    <Centered>false</Centered>
+    <Position>Primary</Position>
+    <Color>None</Color>
+    <SecondaryColor>RGB(0,0,0)</SecondaryColor>
+    <Pattern>None</Pattern>
+    <Gradient>None</Gradient>
+    <Texture>None</Texture>
+    <TextureMode>Tile</TextureMode>
+    <Transparency>0</Transparency>
+    <BorderColor>None</BorderColor>
+    <BorderStyle>Solid</BorderStyle>
+    <BorderWidth>1</BorderWidth>
+    <Line>
+     <Visibility>true</Visibility>
+     <Extension/>
+     <CategoryGap>0</CategoryGap>
+     <WrapText>true</WrapText>
+     <Position>AtBorder</Position>
+     <Insets>2</Insets>
+     <Axis>
+      <Color>@1</Color>
+      <Style>Solid</Style>
+      <Width>2</Width>
+     </Axis>
+     <MajorTicks>
+      <Color>@1</Color>
+      <Style>Solid</Style>
+      <Width>2</Width>
+     </MajorTicks>
+     <MajorTickGap>0</MajorTickGap>
+     <Text>
+      <FontFamily>Automatic</FontFamily>
+      <Color>@16</Color>
+      <Size>9</Size>
+      <Style>Normal</Style>
+      <HorizontalPosition>Default</HorizontalPosition>
+      <VerticalPosition>Default</VerticalPosition>
+      <Direction>Default</Direction>
+     </Text>
+     <Color>None</Color>
+     <SecondaryColor>RGB(0,0,0)</SecondaryColor>
+     <Pattern>None</Pattern>
+     <Gradient>None</Gradient>
+     <Texture>None</Texture>
+     <TextureMode>Tile</TextureMode>
+     <Transparency>0</Transparency>
+     <BorderColor>None</BorderColor>
+     <BorderStyle>Solid</BorderStyle>
+     <BorderWidth>1</BorderWidth>
+    </Line>
+    <GridLine>
+     <Visibility>true</Visibility>
+     <Extension/>
+     <MajorLines>
+      <Color>@2</Color>
+      <Style>Solid</Style>
+      <Width>1</Width>
+     </MajorLines>
+     <MajorTickGap>0</MajorTickGap>
+    </GridLine>
+    <Title>
+     <Visibility>true</Visibility>
+     <Extension/>
+     <Caption/>
+     <Text>
+      <FontFamily>Automatic</FontFamily>
+      <Color>@16</Color>
+      <Size>8</Size>
+      <Style>Normal</Style>
+      <HorizontalPosition>Default</HorizontalPosition>
+      <VerticalPosition>Default</VerticalPosition>
+      <Direction>Default</Direction>
+     </Text>
+     <Color>None</Color>
+     <SecondaryColor>RGB(0,0,0)</SecondaryColor>
+     <Pattern>None</Pattern>
+     <Gradient>None</Gradient>
+     <Texture>None</Texture>
+     <TextureMode>Tile</TextureMode>
+     <Transparency>0</Transparency>
+     <BorderColor>None</BorderColor>
+     <BorderStyle>Solid</BorderStyle>
+     <BorderWidth>1</BorderWidth>
+    </Title>
+    <Unit>
+     <Visibility>true</Visibility>
+     <Extension/>
+     <Caption/>
+     <Text>
+      <FontFamily>Automatic</FontFamily>
+      <Color>@16</Color>
+      <Size>8</Size>
+      <Style>Normal</Style>
+      <HorizontalPosition>Default</HorizontalPosition>
+      <VerticalPosition>Default</VerticalPosition>
+      <Direction>Default</Direction>
+     </Text>
+     <Color>None</Color>
+     <SecondaryColor>RGB(0,0,0)</SecondaryColor>
+     <Pattern>None</Pattern>
+     <Gradient>None</Gradient>
+     <Texture>None</Texture>
+     <TextureMode>Tile</TextureMode>
+     <Transparency>0</Transparency>
+     <BorderColor>None</BorderColor>
+     <BorderStyle>Solid</BorderStyle>
+     <BorderWidth>1</BorderWidth>
+    </Unit>
+   </CategoryAxis>
+   <ValueAxis id="ValueAxis1">
+    <Visibility>true</Visibility>
+    <Extension/>
+    <Minimum>0</Minimum>
+    <MinimumCalculation>Automatic</MinimumCalculation>
+    <Maximum>200</Maximum>
+    <MaximumCalculation>Automatic</MaximumCalculation>
+    <ScalingType>Linear</ScalingType>
+    <Order>Ascending</Order>
+    <Position>Primary</Position>
+    <Color>None</Color>
+    <SecondaryColor>RGB(0,0,0)</SecondaryColor>
+    <Pattern>None</Pattern>
+    <Gradient>None</Gradient>
+    <Texture>None</Texture>
+    <TextureMode>Tile</TextureMode>
+    <Transparency>0</Transparency>
+    <BorderColor>None</BorderColor>
+    <BorderStyle>Solid</BorderStyle>
+    <BorderWidth>1</BorderWidth>
+    <Line>
+     <Visibility>true</Visibility>
+     <Extension/>
+     <Insets>2</Insets>
+     <Format/>
+     <Axis>
+      <Color>@1</Color>
+      <Style>Solid</Style>
+      <Width>2</Width>
+     </Axis>
+     <MajorTickCalculation>AutomaticTicks</MajorTickCalculation>
+     <NumberMajorTicks>6</NumberMajorTicks>
+     <MajorTicks>
+      <Color>@1</Color>
+      <Style>Solid</Style>
+      <Width>2</Width>
+     </MajorTicks>
+     <AutomaticMinorTicks>true</AutomaticMinorTicks>
+     <NumberMinorTicks>4</NumberMinorTicks>
+     <MinorTicks>
+      <Color>@1</Color>
+      <Style>Solid</Style>
+      <Width>1</Width>
+     </MinorTicks>
+     <Text>
+      <FontFamily>Automatic</FontFamily>
+      <Color>@16</Color>
+      <Size>9</Size>
+      <Style>Normal</Style>
+      <HorizontalPosition>Default</HorizontalPosition>
+      <VerticalPosition>Default</VerticalPosition>
+      <Direction>Default</Direction>
+     </Text>
+     <Color>None</Color>
+     <SecondaryColor>RGB(0,0,0)</SecondaryColor>
+     <Pattern>None</Pattern>
+     <Gradient>None</Gradient>
+     <Texture>None</Texture>
+     <TextureMode>Tile</TextureMode>
+     <Transparency>0</Transparency>
+     <BorderColor>None</BorderColor>
+     <BorderStyle>Solid</BorderStyle>
+     <BorderWidth>1</BorderWidth>
+    </Line>
+    <GridLine>
+     <Visibility>true</Visibility>
+     <Extension/>
+     <MajorLines>
+      <Color>@2</Color>
+      <Style>Solid</Style>
+      <Width>1</Width>
+     </MajorLines>
+     <MajorTickGap>0</MajorTickGap>
+     <MinorLines>
+      <Color>@3</Color>
+      <Style>Dotted</Style>
+      <Width>1</Width>
+     </MinorLines>
+     <MinorTickGap>0</MinorTickGap>
+    </GridLine>
+    <Title>
+     <Visibility>true</Visibility>
+     <Extension/>
+     <Caption/>
+     <Text>
+      <FontFamily>Automatic</FontFamily>
+      <Color>@16</Color>
+      <Size>8</Size>
+      <Style>Normal</Style>
+      <HorizontalPosition>Default</HorizontalPosition>
+      <VerticalPosition>Default</VerticalPosition>
+      <Direction>Default</Direction>
+     </Text>
+     <Color>None</Color>
+     <SecondaryColor>RGB(0,0,0)</SecondaryColor>
+     <Pattern>None</Pattern>
+     <Gradient>None</Gradient>
+     <Texture>None</Texture>
+     <TextureMode>Tile</TextureMode>
+     <Transparency>0</Transparency>
+     <BorderColor>None</BorderColor>
+     <BorderStyle>Solid</BorderStyle>
+     <BorderWidth>1</BorderWidth>
+    </Title>
+    <Unit>
+     <Visibility>true</Visibility>
+     <Extension/>
+     <Caption/>
+     <Text>
+      <FontFamily>Automatic</FontFamily>
+      <Color>@16</Color>
+      <Size>8</Size>
+      <Style>Normal</Style>
+      <HorizontalPosition>Default</HorizontalPosition>
+      <VerticalPosition>Default</VerticalPosition>
+      <Direction>Default</Direction>
+     </Text>
+     <Color>None</Color>
+     <SecondaryColor>RGB(0,0,0)</SecondaryColor>
+     <Pattern>None</Pattern>
+     <Gradient>None</Gradient>
+     <Texture>None</Texture>
+     <TextureMode>Tile</TextureMode>
+     <Transparency>0</Transparency>
+     <BorderColor>None</BorderColor>
+     <BorderStyle>Solid</BorderStyle>
+     <BorderWidth>1</BorderWidth>
+    </Unit>
+   </ValueAxis>
+   <ValueAxis id="ValueAxis2">
+    <Visibility>false</Visibility>
+    <Extension/>
+    <Minimum>0</Minimum>
+    <MinimumCalculation>Automatic</MinimumCalculation>
+    <Maximum>1</Maximum>
+    <MaximumCalculation>Automatic</MaximumCalculation>
+    <ScalingType>Linear</ScalingType>
+    <Order>Ascending</Order>
+    <Position>Secondary</Position>
+    <Color>None</Color>
+    <SecondaryColor>RGB(0,0,0)</SecondaryColor>
+    <Pattern>None</Pattern>
+    <Gradient>None</Gradient>
+    <Texture>None</Texture>
+    <TextureMode>Tile</TextureMode>
+    <Transparency>0</Transparency>
+    <BorderColor>None</BorderColor>
+    <BorderStyle>Solid</BorderStyle>
+    <BorderWidth>1</BorderWidth>
+    <Line>
+     <Visibility>true</Visibility>
+     <Extension/>
+     <Insets>2</Insets>
+     <Format/>
+     <Axis>
+      <Color>@1</Color>
+      <Style>Solid</Style>
+      <Width>2</Width>
+     </Axis>
+     <MajorTickCalculation>AutomaticTicks</MajorTickCalculation>
+     <NumberMajorTicks>6</NumberMajorTicks>
+     <MajorTicks>
+      <Color>@1</Color>
+      <Style>Solid</Style>
+      <Width>2</Width>
+     </MajorTicks>
+     <AutomaticMinorTicks>true</AutomaticMinorTicks>
+     <NumberMinorTicks>4</NumberMinorTicks>
+     <MinorTicks>
+      <Color>@1</Color>
+      <Style>Solid</Style>
+      <Width>1</Width>
+     </MinorTicks>
+     <Text>
+      <FontFamily>Automatic</FontFamily>
+      <Color>@16</Color>
+      <Size>9</Size>
+      <Style>Normal</Style>
+      <HorizontalPosition>Default</HorizontalPosition>
+      <VerticalPosition>Default</VerticalPosition>
+      <Direction>Default</Direction>
+     </Text>
+     <Color>None</Color>
+     <SecondaryColor>RGB(0,0,0)</SecondaryColor>
+     <Pattern>None</Pattern>
+     <Gradient>None</Gradient>
+     <Texture>None</Texture>
+     <TextureMode>Tile</TextureMode>
+     <Transparency>0</Transparency>
+     <BorderColor>None</BorderColor>
+     <BorderStyle>Solid</BorderStyle>
+     <BorderWidth>1</BorderWidth>
+    </Line>
+    <GridLine>
+     <Visibility>true</Visibility>
+     <Extension/>
+     <MajorLines>
+      <Color>@2</Color>
+      <Style>Solid</Style>
+      <Width>1</Width>
+     </MajorLines>
+     <MajorTickGap>0</MajorTickGap>
+     <MinorLines>
+      <Color>@3</Color>
+      <Style>Dotted</Style>
+      <Width>1</Width>
+     </MinorLines>
+     <MinorTickGap>0</MinorTickGap>
+    </GridLine>
+    <Title>
+     <Visibility>true</Visibility>
+     <Extension/>
+     <Caption/>
+     <Text>
+      <FontFamily>Automatic</FontFamily>
+      <Color>@16</Color>
+      <Size>8</Size>
+      <Style>Normal</Style>
+      <HorizontalPosition>Default</HorizontalPosition>
+      <VerticalPosition>Default</VerticalPosition>
+      <Direction>Default</Direction>
+     </Text>
+     <Color>None</Color>
+     <SecondaryColor>RGB(0,0,0)</SecondaryColor>
+     <Pattern>None</Pattern>
+     <Gradient>None</Gradient>
+     <Texture>None</Texture>
+     <TextureMode>Tile</TextureMode>
+     <Transparency>0</Transparency>
+     <BorderColor>None</BorderColor>
+     <BorderStyle>Solid</BorderStyle>
+     <BorderWidth>1</BorderWidth>
+    </Title>
+    <Unit>
+     <Visibility>true</Visibility>
+     <Extension/>
+     <Caption/>
+     <Text>
+      <FontFamily>Automatic</FontFamily>
+      <Color>@16</Color>
+      <Size>8</Size>
+      <Style>Normal</Style>
+      <HorizontalPosition>Default</HorizontalPosition>
+      <VerticalPosition>Default</VerticalPosition>
+      <Direction>Default</Direction>
+     </Text>
+     <Color>None</Color>
+     <SecondaryColor>RGB(0,0,0)</SecondaryColor>
+     <Pattern>None</Pattern>
+     <Gradient>None</Gradient>
+     <Texture>None</Texture>
+     <TextureMode>Tile</TextureMode>
+     <Transparency>0</Transparency>
+     <BorderColor>None</BorderColor>
+     <BorderStyle>Solid</BorderStyle>
+     <BorderWidth>1</BorderWidth>
+    </Unit>
+   </ValueAxis>
+  </ChartAxes>
+ </Elements>
+ <Values>
+  <Series>
+   <Visibility>true</Visibility>
+   <XAxisId>Primary</XAxisId>
+   <YAxisId>Primary</YAxisId>
+   <LineType>Direct</LineType>
+   <ShowInLegend>Automatic</ShowInLegend>
+   <ShowLabel>false</ShowLabel>
+   <Format>$Label</Format>
+   <LineColor>Automatic</LineColor>
+   <LineStyle>Solid</LineStyle>
+   <LineWidth>1</LineWidth>
+   <Color>Automatic</Color>
+   <SecondaryColor>RGB(0,0,0)</SecondaryColor>
+   <Pattern>None</Pattern>
+   <Gradient>None</Gradient>
+   <Texture>None</Texture>
+   <TextureMode>Tile</TextureMode>
+   <Transparency>0</Transparency>
+   <MarkerShape>Rectangle</MarkerShape>
+   <MarkerSize>5</MarkerSize>
+   <BorderColor>RGB(0,0,0)</BorderColor>
+   <BorderStyle>Solid</BorderStyle>
+   <BorderWidth>1</BorderWidth>
+   <Text>
+    <FontFamily>Automatic</FontFamily>
+    <Color>@16</Color>
+    <Size>8</Size>
+    <Style>Normal</Style>
+    <HorizontalPosition>Default</HorizontalPosition>
+    <VerticalPosition>Default</VerticalPosition>
+    <Direction>Default</Direction>
+   </Text>
+  </Series>
+ </Values>
+ <Images/>
+</SAPChartCustomizing>
+
+</tt:template>
+
+</tt:transform>

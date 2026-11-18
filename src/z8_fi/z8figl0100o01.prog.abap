@@ -1,0 +1,79 @@
+*&---------------------------------------------------------------------*
+*& Include          Z8FIGL0100O01
+*&---------------------------------------------------------------------*
+*&---------------------------------------------------------------------*
+*& Module STATUS_0100 OUTPUT
+*&---------------------------------------------------------------------*
+*&
+*&---------------------------------------------------------------------*
+MODULE status_0100 OUTPUT.
+ SET PF-STATUS 'G0100'.
+ SET TITLEBAR 'T0100'.
+ENDMODULE.
+*&---------------------------------------------------------------------*
+*& Module ALV_CL_PROCESS_0100 OUTPUT
+*&---------------------------------------------------------------------*
+*&
+*&---------------------------------------------------------------------*
+MODULE alv_cl_process_0100 OUTPUT.
+
+  IF go_cont_100 IS NOT BOUND.
+
+    PERFORM create_objects_100. "컨테이너 + alv 생성
+    PERFORM set_evt_handler_100.
+    PERFORM set_alv_layout_100.
+    PERFORM set_field_catalog_100. "ALV에 예외 컬럼 정보 제공
+    PERFORM display_alv_100.    " alv 출력
+    PERFORM display_html.
+
+*  ELSE.
+*
+*    IF gv_refresh_100 = 'X'.
+*
+*      PERFORM refresh_alv_100.
+*
+*    ENDIF.
+  ENDIF.
+
+*  IF go_cont_html IS NOT BOUND.
+*
+*    PERFORM create_objects_html. "컨테이너 + alv 생성
+*    PERFORM display_html.    " alv 출력
+*
+**  ELSE.
+**
+**    IF gv_refresh_100 = 'X'.
+**
+**      PERFORM refresh_alv_100.
+**
+**    ENDIF.
+*  ENDIF.
+
+ENDMODULE.
+*&---------------------------------------------------------------------*
+*& Module STATUS_0200 OUTPUT
+*&---------------------------------------------------------------------*
+*&
+*&---------------------------------------------------------------------*
+MODULE status_0200 OUTPUT.
+ SET PF-STATUS 'G0200'.
+ SET TITLEBAR 'T0200'.
+ENDMODULE.
+*&---------------------------------------------------------------------*
+*& Module ALV_CL_PROCESS_0200 OUTPUT
+*&---------------------------------------------------------------------*
+*&
+*&---------------------------------------------------------------------*
+MODULE alv_cl_process_0200 OUTPUT.
+
+  IF go_cont_200 IS NOT BOUND.
+
+    PERFORM create_objects_200. "컨테이너 + alv 생성
+    PERFORM set_evt_handler_200.
+    PERFORM set_alv_layout_200.
+    PERFORM set_field_catalog_200. "ALV에 예외 컬럼 정보 제공
+    PERFORM display_alv_200.    " alv 출력
+
+  ENDIF.
+
+ENDMODULE.

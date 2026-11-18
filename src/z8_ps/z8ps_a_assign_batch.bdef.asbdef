@@ -1,0 +1,13 @@
+abstract;
+strict ( 2 );
+with hierarchy;
+
+define behavior for Z8PS_A_ASSIGN_BATCH alias Batch
+{
+    association _Members;
+}
+
+define behavior for Z8PS_A_ASSIGN_MEMBER alias Member
+{
+    association _Batch;
+}

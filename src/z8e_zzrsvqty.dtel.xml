@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>Z8E_ZZRSVQTY</ROLLNAME>
+    <DDLANGUAGE>3</DDLANGUAGE>
+    <DOMNAME>Z8D_QUANTITY</DOMNAME>
+    <HEADLEN>17</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>15</SCRLEN2>
+    <SCRLEN3>17</SCRLEN3>
+    <DDTEXT>Reserved Stock Quantity</DDTEXT>
+    <REPTEXT>Reservation Stock</REPTEXT>
+    <SCRTEXT_S>Reserv Stk</SCRTEXT_S>
+    <SCRTEXT_M>Reservation Stk</SCRTEXT_M>
+    <SCRTEXT_L>Reservation Stock</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>E</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DDTEXT>Reserved Stock Quantity</DDTEXT>
+     <REPTEXT>Reservation Stock</REPTEXT>
+     <SCRTEXT_S>Reserv Stk</SCRTEXT_S>
+     <SCRTEXT_M>Reservation Stk</SCRTEXT_M>
+     <SCRTEXT_L>Reservation Stock</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

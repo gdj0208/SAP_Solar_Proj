@@ -1,0 +1,26 @@
+@Metadata.layer: #CORE
+annotate entity Z8PS_R_AVAILABLE_ELEC_OP with
+{
+  @UI.lineItem: [{ position: 10, label: '사원번호' }]
+  PersonalNumber;
+  
+  @UI.lineItem: [{ position: 20, label: '소속 지사' }]
+  BranchName;
+
+  @UI.lineItem: [{ position: 30, label: '이름' }]
+  Ename;
+
+  @UI.lineItem: [{ position: 40, label: '직무' }]
+  Stell;
+
+  @UI.lineItem: [{ position: 50, label: '등급' }]
+  Grade;
+
+
+ @UI.lineItem: [{
+    position: 60,
+    label: '일일 시공 가능 면적 (㎡/일)',
+    importance: #HIGH
+  }]
+  Capacity;
+}

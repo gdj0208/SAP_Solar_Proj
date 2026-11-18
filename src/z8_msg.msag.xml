@@ -1,0 +1,1455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>Z8_MSG</ARBGB>
+    <MASTERLANG>3</MASTERLANG>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>엑셀 다운로드에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>엑셀을 성공적으로 다운로드 했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>존재하지 않는 고객요청 ID 입니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Excel 템플릿을 찾을 수 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>견적서를 불러오지 못했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>승인대기 중인 견적이 존재합니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>승인완료된 견적이 존재합니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>견적을 생성 할 파일을 업로드 해주세요</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>현장실사 입력서의 고객요청번호를 확인해주세요</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>009</MSGNR>
+     <TEXT>현장실사 입력서의 설치면적을 확인해주세요</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>견적서가 없습니다. 견적서를 생성하시겠습니까?</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>011</MSGNR>
+     <TEXT>견적을 생성할 수 없습니다. 템플릿을 확인해주세요.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>012</MSGNR>
+     <TEXT>SAP ALV 컨트롤 예외</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>013</MSGNR>
+     <TEXT>배정 가능한 Plant가 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>014</MSGNR>
+     <TEXT>ID 채번에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>015</MSGNR>
+     <TEXT>견적 헤더 저장 실패</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>016</MSGNR>
+     <TEXT>견적 아이템 저장 실패</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>017</MSGNR>
+     <TEXT>견적요청 상태 변경 실패</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>018</MSGNR>
+     <TEXT>이미 진행중인 견적 &amp;1이 존재합니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>019</MSGNR>
+     <TEXT>Failed to Save Data</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>020</MSGNR>
+     <TEXT>No Data Selected</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>021</MSGNR>
+     <TEXT>총 구매수량과 검증 완료, 입고, 반품간 수량이 일치하지 않습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>022</MSGNR>
+     <TEXT>데이터를 불러올 수 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>023</MSGNR>
+     <TEXT>Data Successfully Deleted</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>024</MSGNR>
+     <TEXT>Unable to get Index</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>025</MSGNR>
+     <TEXT>No Data Found</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>026</MSGNR>
+     <TEXT>Other User is Editing This Data</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>027</MSGNR>
+     <TEXT>Old Data. Loading New Data...</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>028</MSGNR>
+     <TEXT>Excel 파일을 읽을 수 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>029</MSGNR>
+     <TEXT>&amp;1의 견적서가 존재하지 않습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>030</MSGNR>
+     <TEXT>사용자가 요청을 취소했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>031</MSGNR>
+     <TEXT>처리할 데이터를 선택해주세요</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>032</MSGNR>
+     <TEXT>한 건만 선택해주세요</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>033</MSGNR>
+     <TEXT>이미 처리 완료된 견적입니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>034</MSGNR>
+     <TEXT>기간이 만료된 견적입니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>035</MSGNR>
+     <TEXT>견적 거절 처리 중 오류가 발생했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>036</MSGNR>
+     <TEXT>견적 승인 처리 중 오류가 발생했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>037</MSGNR>
+     <TEXT>견적 요청 정보를 찾을 수 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>038</MSGNR>
+     <TEXT>고객 등록에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>039</MSGNR>
+     <TEXT>변경 완료되었습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>040</MSGNR>
+     <TEXT>조건에 맞는 견적서를 찾지 못했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>041</MSGNR>
+     <TEXT>견적 품목이 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>042</MSGNR>
+     <TEXT>Smart Form을 호출할 수 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>043</MSGNR>
+     <TEXT>견적 정보를 불러오지 못했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>044</MSGNR>
+     <TEXT>금액 조회 실패</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>045</MSGNR>
+     <TEXT>견적 리스트를 불러오지 못했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>046</MSGNR>
+     <TEXT>조회 기간을 입력해주세요</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>047</MSGNR>
+     <TEXT>조회 시작일은 종료일보다 클 수 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>048</MSGNR>
+     <TEXT>기한이 만료된 견적입니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>049</MSGNR>
+     <TEXT>승인이 완료된 견적입니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>050</MSGNR>
+     <TEXT>검색조건에 맞는 데이터가 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>051</MSGNR>
+     <TEXT>대상 데이터를 선택해주십시오</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>052</MSGNR>
+     <TEXT>SO 데이터를 불러오지 못했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>053</MSGNR>
+     <TEXT>데이터를 성공적으로 저장했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>054</MSGNR>
+     <TEXT>데이터를 저장하지 못했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>055</MSGNR>
+     <TEXT>다른 사용자가 작업 중입니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>056</MSGNR>
+     <TEXT>입고 일자는 구매 일자와 같거나 이후여야합니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>057</MSGNR>
+     <TEXT>처리할 행을 선택해주세요</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>058</MSGNR>
+     <TEXT>한 건만 선택해주세요</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>059</MSGNR>
+     <TEXT>이미 생성된 SO가 있습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>060</MSGNR>
+     <TEXT>저장에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>061</MSGNR>
+     <TEXT>조회 조건에 해당하는 데이터가 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>062</MSGNR>
+     <TEXT>구매 오더 - 입고 내역 - 청구서 간 일치하지 않는 데이터가 있습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>063</MSGNR>
+     <TEXT>생성할 전표 아이템이 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>064</MSGNR>
+     <TEXT>전표 아이템 구성이 올바르지 않습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>065</MSGNR>
+     <TEXT>&amp;1 처리가 완료되어 현재 조회조건에 해당하는 데이터가 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>066</MSGNR>
+     <TEXT>이미 &amp;1 및 반제 처리된 건 입니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>067</MSGNR>
+     <TEXT>지급 대상 외상매입금 정보를 찾을 수 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>068</MSGNR>
+     <TEXT>해당 구매오더의 청구서가 불러와져 있지 않습니다 .청구서 불러오기 화면으로 이동합니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>069</MSGNR>
+     <TEXT>청구서와 데이터가 일치하지 않습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>070</MSGNR>
+     <TEXT>고객 외상매출금 미결항목을 찾을 수 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>071</MSGNR>
+     <TEXT>아이템 조회에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>072</MSGNR>
+     <TEXT>입금 대상 회계전표를 찾을 수 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>073</MSGNR>
+     <TEXT>&amp;1를 입력해주세요</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>074</MSGNR>
+     <TEXT>&amp;1는 미래 날짜로 입력할 수 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>075</MSGNR>
+     <TEXT>&amp;1는 &amp;2보다 이전일 수 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>076</MSGNR>
+     <TEXT>실제 입금일이 입금기한을 초과했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>077</MSGNR>
+     <TEXT>해당 청구서에 대한 정보를 찾을 수 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>078</MSGNR>
+     <TEXT>입금처리가 불가능한 청구건입니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>079</MSGNR>
+     <TEXT>차변금액과 대변금액이 일치하지 않습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>080</MSGNR>
+     <TEXT>한 건을 선택하세요</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>081</MSGNR>
+     <TEXT>&amp;1 생성에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>082</MSGNR>
+     <TEXT>진행완료된 계약입니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>083</MSGNR>
+     <TEXT>청구서 입금 상태 변경에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>084</MSGNR>
+     <TEXT>반제정보 갱신에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>085</MSGNR>
+     <TEXT>FIori 화면을 열 수 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>086</MSGNR>
+     <TEXT>설치 일정을 먼저 수립해주세요</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>087</MSGNR>
+     <TEXT>이미 배정이 완료된 건입니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>088</MSGNR>
+     <TEXT>SO &amp;1에 대한 Delivery &amp;2가 이미 존재합니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>089</MSGNR>
+     <TEXT>&amp;1의 재고가 부족합니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>090</MSGNR>
+     <TEXT>Delivery가 생성되었습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>091</MSGNR>
+     <TEXT>Picking이 완료되었습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>092</MSGNR>
+     <TEXT>출고 처리가 완료되었습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>093</MSGNR>
+     <TEXT>재고 예약에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>094</MSGNR>
+     <TEXT>헤더 저장에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>095</MSGNR>
+     <TEXT>아이템 저장에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>096</MSGNR>
+     <TEXT>공사 시작 예정일로부터 5영업일 이내에만 가능합니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>097</MSGNR>
+     <TEXT>다른사용자가 동일 SO를 처리중입니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>098</MSGNR>
+     <TEXT>해당 재고에 대한 예약처리가 진행중입니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>099</MSGNR>
+     <TEXT>이미 Picking이 완료된 건입니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>100</MSGNR>
+     <TEXT>이미 출고가 완료된 건입니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>101</MSGNR>
+     <TEXT>Picking이 완료되지 않았습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>102</MSGNR>
+     <TEXT>Delivery를 먼저 생성해주세요</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>103</MSGNR>
+     <TEXT>선택 행을 읽어오지 못했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>104</MSGNR>
+     <TEXT>재고 차감에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>105</MSGNR>
+     <TEXT>상태 변경에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>106</MSGNR>
+     <TEXT>회계전표 생성에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>107</MSGNR>
+     <TEXT>자재문서 생성에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>108</MSGNR>
+     <TEXT>자재문서 &amp;1 회계전표 &amp;2가 생성되었습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>109</MSGNR>
+     <TEXT>&amp;1의 &amp;2내역이 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>110</MSGNR>
+     <TEXT>선택한 전표 정보를 찾을 수 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>111</MSGNR>
+     <TEXT>전표 &amp;1의 상세정보를 찾을 수 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>112</MSGNR>
+     <TEXT>해당 자재문서의 회계전표가 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>113</MSGNR>
+     <TEXT>조회할 회계전표 정보가 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>114</MSGNR>
+     <TEXT>데이터 조회에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>115</MSGNR>
+     <TEXT>조회조건에 맞는 데이터가 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>116</MSGNR>
+     <TEXT>입고 예정 문서가 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>117</MSGNR>
+     <TEXT>회계 전표 번호 채번에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>118</MSGNR>
+     <TEXT>이동평균가 조회에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>119</MSGNR>
+     <TEXT>자재 정보 조회에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>120</MSGNR>
+     <TEXT>&amp;1 ALV를 그리는데 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>121</MSGNR>
+     <TEXT>&amp;1 필수 입력입니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>122</MSGNR>
+     <TEXT>아직 &amp;1되지 않은 건입니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>123</MSGNR>
+     <TEXT>조회 시작일은 현재 날짜보다 클 수 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>124</MSGNR>
+     <TEXT>조회 시작일을 입력해주세요</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>125</MSGNR>
+     <TEXT>만료된 견적 상태 업데이트 실패</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>126</MSGNR>
+     <TEXT>조회 범위를 확인해주세요</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>127</MSGNR>
+     <TEXT>견적 아이템 조회에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>128</MSGNR>
+     <TEXT>견적서 메일 발송 요청이 등록되었습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>129</MSGNR>
+     <TEXT>메일 발송 요청에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>130</MSGNR>
+     <TEXT>수신자 이메일이 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>131</MSGNR>
+     <TEXT>조건에 맞는 이동내역이 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>132</MSGNR>
+     <TEXT>회계월은 01부터 12까지만 입력할 수 있습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>133</MSGNR>
+     <TEXT>&amp;1 &amp;2 완료</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>134</MSGNR>
+     <TEXT>&amp;1번은 &amp;2 상태 취소할 수 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>135</MSGNR>
+     <TEXT>검증을 확정한 품목이 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>136</MSGNR>
+     <TEXT>다른 사용자가 해당 &amp;1 처리 중입니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>137</MSGNR>
+     <TEXT>PR 생성 중 오류가 발생해 작업을 취소했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>138</MSGNR>
+     <TEXT>이미 다른 사용자가 청구한 견적입니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>139</MSGNR>
+     <TEXT>&amp;1에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>140</MSGNR>
+     <TEXT>헤더 금액과 품목 금액 합계가 맞지 않아 청구할 수 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>141</MSGNR>
+     <TEXT>이미 청구된 계약입니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>142</MSGNR>
+     <TEXT>선수금 입금 후 잔금을 청구할 수 있습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>143</MSGNR>
+     <TEXT>기존 조회 범위를 벗어난 &amp;1입니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>144</MSGNR>
+     <TEXT>&amp;1 조회 범위를 확인해주세요</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>145</MSGNR>
+     <TEXT>&amp;1 입력해주세요</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>146</MSGNR>
+     <TEXT>&amp;1 정보를 찾을 수 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>147</MSGNR>
+     <TEXT>데이터 갱신 중 오류가 발생했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>148</MSGNR>
+     <TEXT>현재 조회 조건에서 추가로 조회할 다른 지사의 &amp;1 내역이 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>149</MSGNR>
+     <TEXT>조회된 &amp;1가 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>150</MSGNR>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>200</MSGNR>
+     <TEXT>&amp;1 관리자 전용 프로그램입니다. 권한을 요청하세요.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>201</MSGNR>
+     <TEXT>해당되는 구매오더가 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>202</MSGNR>
+     <TEXT>&amp;1번은 이미 처리 완료된 품목입니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>203</MSGNR>
+     <TEXT>&amp;1 확인 팝업창 생성 실패.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>204</MSGNR>
+     <TEXT>데이터를 삭제했습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>205</MSGNR>
+     <TEXT>조회 기간은 최대 5년을 초과할 수 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>206</MSGNR>
+     <TEXT>날짜는 필수 입력입니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>207</MSGNR>
+     <TEXT>구매오더 &amp;1은 이미 송장검증 되었습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>208</MSGNR>
+     <TEXT>SO 헤더 저장에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>209</MSGNR>
+     <TEXT>SO 아이템 저장에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>210</MSGNR>
+     <TEXT>프로젝트 생성에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>211</MSGNR>
+     <TEXT>프로젝트 이력 저장에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>212</MSGNR>
+     <TEXT>시작일은 현재일보다 작을 수 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>213</MSGNR>
+     <TEXT>프로젝트 조회에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>214</MSGNR>
+     <TEXT>&amp;1 데이터가 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>215</MSGNR>
+     <TEXT>&amp;1 갱신에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>216</MSGNR>
+     <TEXT>공장 달력 날짜 변환에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>217</MSGNR>
+     <TEXT>출고 예정일 계산에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>218</MSGNR>
+     <TEXT>구매오더 &amp;1의 송장 처리가 완료되었습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>219</MSGNR>
+     <TEXT>청구서 파일을 불러왔습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>220</MSGNR>
+     <TEXT>구매오더 헤더 정보를 찾을 수 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>221</MSGNR>
+     <TEXT>파일 다이얼로그를 여는 중 오류가 발생했습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>222</MSGNR>
+     <TEXT>청구서와 구매오더(&amp;1)간 데이터가 일치하지 않습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>223</MSGNR>
+     <TEXT>비교할 청구서가 없습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>224</MSGNR>
+     <TEXT>구매오더( &amp;1 )가 입고되었습니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>225</MSGNR>
+     <TEXT>입고 일자는 오늘 날짜보다 미래일 수 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>226</MSGNR>
+     <TEXT>조회할 연도와 분기를 모두 선택해 주세요</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>227</MSGNR>
+     <TEXT>시작일은 종료일과 같거나 앞이여야 합니다.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>228</MSGNR>
+     <TEXT>다른 사용자가 해당 요청의 견적을 생성 중입니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>229</MSGNR>
+     <TEXT>더이상 이동할 화면이 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>230</MSGNR>
+     <TEXT>&amp;1 조회에 실패했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>232</MSGNR>
+     <TEXT>선택한 행을 읽어오지 못했습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>233</MSGNR>
+     <TEXT>SO를 먼저 생성해주세요</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>234</MSGNR>
+     <TEXT>인력배정이 완료된 건은 설치일정을 변경할 수 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>235</MSGNR>
+     <TEXT>배정된 설치기사가 없습니다</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>236</MSGNR>
+     <TEXT>자재 이동 문서 &amp;1 생성 (구매오더 &amp;2)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>3</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+     <MSGNR>237</MSGNR>
+     <TEXT>자재 이동 문서 &amp;1 생성 (구매오더 &amp;2 외 &amp;3건)</TEXT>
+    </T100>
+   </T100>
+   <I18N_LANGS>
+    <LANGU>E</LANGU>
+   </I18N_LANGS>
+   <T100T>
+    <T100T>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z8_MSG</ARBGB>
+    </T100T>
+   </T100T>
+   <T100_TEXTS>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>000</MSGNR>
+     <TEXT>엑셀 다운로드에 실패했습니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>001</MSGNR>
+     <TEXT>엑셀을 성공적으로 다운로드 했습니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>002</MSGNR>
+     <TEXT>존재하지 않는 고객요청 ID 입니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>003</MSGNR>
+     <TEXT>Excel 템플릿을 찾을 수 없습니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>004</MSGNR>
+     <TEXT>견적서를 불러오지 못했습니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>005</MSGNR>
+     <TEXT>승인대기 중인 견적이 존재합니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>006</MSGNR>
+     <TEXT>승인완료된 견적이 존재합니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>007</MSGNR>
+     <TEXT>견적을 생성 할 파일을 업로드 해주세요</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>008</MSGNR>
+     <TEXT>현장실사 입력서의 고객요청번호를 확인해주세요</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>009</MSGNR>
+     <TEXT>현장실사 입력서의 설치면적을 확인해주세요</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>010</MSGNR>
+     <TEXT>견적서가 없습니다. 견적서를 생성하시겠습니까?</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>011</MSGNR>
+     <TEXT>견적을 생성할 수 없습니다. 템플릿을 확인해주세요.</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>012</MSGNR>
+     <TEXT>SAP ALV 컨트롤 예외</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>013</MSGNR>
+     <TEXT>배정 가능한 Plant가 없습니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>014</MSGNR>
+     <TEXT>견적 번호 채번에 실패했습니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>015</MSGNR>
+     <TEXT>견적 헤더 저장 실패</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>016</MSGNR>
+     <TEXT>견적 아이템 저장 실패</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>017</MSGNR>
+     <TEXT>견적요청 상태 변경 실패</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>018</MSGNR>
+     <TEXT>이미 진행중인 견적 &amp;1이 존재합니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>019</MSGNR>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>020</MSGNR>
+     <TEXT>No Data Selected</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>021</MSGNR>
+     <TEXT>The total expected stock quantity does not match the sum of the pre-order</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>022</MSGNR>
+     <TEXT>데이터를 불러올 수 없습니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>023</MSGNR>
+     <TEXT>Data Successfully Deleted</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>024</MSGNR>
+     <TEXT>Unable to get Index</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>025</MSGNR>
+     <TEXT>No Data Found</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>026</MSGNR>
+     <TEXT>Other User is Editing This Data</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>027</MSGNR>
+     <TEXT>Old Data. Loading New Data...</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>028</MSGNR>
+     <TEXT>Excel 파일을 읽을 수 없습니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>029</MSGNR>
+     <TEXT>&amp;1의 견적서가 존재하지 않습니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>030</MSGNR>
+     <TEXT>사용자가 요청을 취소했습니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>031</MSGNR>
+     <TEXT>처리할 데이터를 선택해주세요</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>032</MSGNR>
+     <TEXT>한 건만 선택해주세요</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>033</MSGNR>
+     <TEXT>이미 처리 완료된 견적입니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>034</MSGNR>
+     <TEXT>기간이 만료된 견적입니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>035</MSGNR>
+     <TEXT>견적 거절 처리 중 오류가 발생했습니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>036</MSGNR>
+     <TEXT>견적 승인 처리 중 오류가 발생했습니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>037</MSGNR>
+     <TEXT>견적 요청 정보를 찾을 수 없습니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>038</MSGNR>
+     <TEXT>고객 등록에 실패했습니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>039</MSGNR>
+     <TEXT>변경 완료되었습니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>040</MSGNR>
+     <TEXT>조건에 맞는 견적서를 찾지 못했습니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>041</MSGNR>
+     <TEXT>견적 품목이 없습니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>042</MSGNR>
+     <TEXT>Smart Form을 호출할 수 없습니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>043</MSGNR>
+     <TEXT>견적 정보를 불러오지 못했습니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>044</MSGNR>
+     <TEXT>금액 조회 실패</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>045</MSGNR>
+     <TEXT>견적 리스트를 불러오지 못했습니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>046</MSGNR>
+     <TEXT>조회 기간을 입력해주세요</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>047</MSGNR>
+     <TEXT>조회 시작일은 종료일보다 클 수 없습니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>048</MSGNR>
+     <TEXT>기한이 만료된 견적입니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>049</MSGNR>
+     <TEXT>승인이 완료된 견적입니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>050</MSGNR>
+     <TEXT>검색조건에 맞는 데이터가 없습니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>051</MSGNR>
+     <TEXT>대상 데이터를 선택해주십시오</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>052</MSGNR>
+     <TEXT>SO 데이터를 불러오지 못했습니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>053</MSGNR>
+     <TEXT>데이터를 성공적으로 저장했습니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>054</MSGNR>
+     <TEXT>데이터를 저장하지 못했습니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>055</MSGNR>
+     <TEXT>다른 사용자가 작업 중입니다.</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>056</MSGNR>
+     <TEXT>입고 일자는 구매 일자와 같거나 이후여야합니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>057</MSGNR>
+     <TEXT>처리할 행을 선택해주세요</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>058</MSGNR>
+     <TEXT>한 건만 선택해주세요</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>059</MSGNR>
+     <TEXT>이미 생성된 SO가 있습니다</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>060</MSGNR>
+     <TEXT>저장에 실패했습니다</TEXT>
+    </item>
+   </T100_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

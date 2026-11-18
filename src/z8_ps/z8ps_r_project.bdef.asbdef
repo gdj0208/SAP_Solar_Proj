@@ -1,0 +1,64 @@
+managed implementation in class zbp_8ps_r_project unique;
+strict ( 2 );
+
+
+define behavior for Z8PS_R_PROJECT alias Project
+persistent table z8ps_project with additional save
+lock master
+authorization master ( global )
+{
+  update; // Project라는 BO가 할 수 있는 행동 -> 프로젝트 수정
+
+
+
+  association _Tech { create; } // Project 아래에 새로운 배정이력을 만듦
+
+
+  // feature: instance -> RAP가 "현재 이 프로젝트에서 이 Action을 실행할 수 있나요?"라고 물어볼 수 있게 됨
+  action ( features : instance ) // Project 한 건마다 사용가능 여부를 다르게 결정
+  confirmationAssignment // Action의 외부 이름 , action confirmationAssignment: 인력배정 확정이라는 Action을 정의
+  deep parameter Z8PS_A_ASSIGN_BATCH; // Action 호출 시 추가로 전달받는 값의 구조 (사원 번호)
+
+  mapping for z8ps_project
+    {
+      ProjectId       = pro_id;
+      SalesOrderId    = vbeln;
+      StartDate       = sdate;
+      EndDate         = edate;
+      ActualStartDate = sdate_a;
+      ActualEndDate   = edate_a;
+      WorkDays        = work_days;
+      BranchCode      = branch;
+      ProjectStatus   = status_p;
+      InstallAddress  = install_address;
+      TotalArea       = total_area;
+      CapacityKwp     = capacity_kwp;
+      EssYn           = ess_yn;
+      RequestDate     = request_date;
+      Erdat           = erdat;
+      Ernam           = ernam;
+    }
+}
+
+define behavior for Z8PS_R_TECH_HIST alias TechHist
+persistent table z8ps_tech_hist
+lock dependent by _Project
+authorization dependent by _Project // Project의 Authorization을 따라감
+{
+  field ( readonly ) ProjectId;
+  association _Project;
+
+  mapping for z8ps_tech_hist
+    {
+      ProjectId       = pro_id;
+      PersonalNumber  = pernr;
+      StartDate       = sdate;
+      EndDate         = edate;
+      Stell           = stell;
+      Grade           = grade;
+      ActualStartDate = sdate_a;
+      ActualEndDate   = edate_a;
+      DailyCost       = daily_cost;
+      Waers           = waers;
+    }
+}

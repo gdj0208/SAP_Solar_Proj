@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service View'
+define service Z8_EMP_TEST {
+  expose z8_emp_test;
+}

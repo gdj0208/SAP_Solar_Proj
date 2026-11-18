@@ -1,0 +1,58 @@
+managed implementation in class zbp_8r_projects unique;
+strict ( 2 );
+
+define behavior for z8r_projects alias projects
+persistent table z8ps_project
+lock master
+authorization master ( global )
+with additional save
+{
+  update ( features : instance );
+
+  // 3. 수정 불가 필드 설정
+  field ( readonly ) vbeln, name, branch, branch_name, del_status, address, sdate, edate, status;
+  //field ( readonly : update ) status;
+
+  // 1. 자식(배정 인력)과의 Association 매핑
+  association _TechHist; //{ create; }
+
+  // 2. 비즈니스 요구사항에 맞춘 커스텀 액션 버튼 3개 선언
+  action ( features : instance ) startWork result [1] $self;       // 작업 시작 (상태 -> 40)
+  action ( features : instance ) completeInstall result [1] $self; // 설치 완료 (상태 -> 50)
+  action ( features : instance ) completeInspect parameter z8a_inspect_param result [1] $self; // 고객 검수 완료 (상태 -> 60)
+  action ( features : instance ) rejectInspect   parameter Z8A_REJECT_PARAM result [1] $self;
+
+
+  mapping for z8ps_project
+  {
+    pro_id   = pro_id;
+    sdate    = sdate;
+    edate    = edate;
+    status = status_p;
+    branch   = branch;
+    address = install_address;
+    real_sdate = sdate_a;
+    real_edate = edate_a;
+  }
+}
+
+define behavior for z8r_tech_hist alias tech_hist
+persistent table z8ps_tech_hist
+lock dependent by _Project
+authorization dependent by _Project
+{
+  update ( features : instance );
+  field ( readonly ) pro_id, branch_name, emp_name, emp_grade, emp_tel, edate;
+  field ( readonly : update ) pernr, sdate;
+  association _Project;
+
+  mapping for z8ps_tech_hist
+  {
+    pro_id = pro_id;
+    pernr  = pernr;
+    sdate = sdate;
+    edate = edate;
+    work_sdate  = sdate_a;
+    work_edate  = edate_a;
+  }
+}

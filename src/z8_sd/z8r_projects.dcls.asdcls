@@ -1,0 +1,6 @@
+@EndUserText.label: '프로젝트 조회 권한'
+@MappingRole: true
+define role Z8R_PROJECTS {
+  grant select on z8r_projects
+    where ( ) = aspect pfcg_auth( Z8SD_AUTH, ACTVT = '16' );
+}

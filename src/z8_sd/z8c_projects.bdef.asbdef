@@ -1,0 +1,33 @@
+projection;
+strict ( 2 );
+
+define behavior for z8c_projects alias Projects
+{
+  //use create;
+  use update;
+  //use delete;
+
+  // 화면에 노출시킬 액션 매핑
+  use action startWork;
+  use action completeInstall;
+  use action completeInspect;
+  use action rejectInspect;
+
+  use association _TechHist; //{ create; }
+
+
+  // 액션 실행 시 UI 자동 새로고침(Refresh) 지시
+  side effects {
+    action startWork       affects field status, entity _TechHist;
+    action completeInstall affects field status, entity _TechHist;
+    action completeInspect affects field status, entity _TechHist;
+    action rejectInspect   affects field status, entity _TechHist;
+  }
+}
+
+define behavior for Z8C_tech_hist alias Tech_Hist
+{
+  use update;
+  //use delete;
+  use association _Project;
+}

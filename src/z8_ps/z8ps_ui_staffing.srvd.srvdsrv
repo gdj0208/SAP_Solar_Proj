@@ -1,0 +1,11 @@
+@EndUserText.label: 'PS Staffing Service'
+define service Z8PS_UI_STAFFING {
+  expose Z8PS_C_PROJECT              as Project;
+  expose Z8PS_C_TECH_HIST            as TechHist;
+  expose Z8PS_VH_PROJECT             as ProjectVH;
+  expose Z8_R_BRANCH                 as BranchVH;
+  expose Z8PS_VH_STATUS              as ProjectStatusVH;
+  expose Z8PS_R_AVAILABLE_TECH_OP    as AvailableTech;
+  expose Z8PS_R_AVAILABLE_INSTALL_OP as AvailableInstall;
+  expose Z8PS_R_AVAILABLE_ELEC_OP    as AvailableElec;
+}

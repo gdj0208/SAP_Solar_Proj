@@ -1,0 +1,7 @@
+PROCESS BEFORE OUTPUT.
+  MODULE status_1200.
+  MODULE init_processing1200.
+  MODULE load_external_detail1200.
+
+PROCESS AFTER INPUT.
+ MODULE USER_COMMAND_1200.

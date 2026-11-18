@@ -1,0 +1,55 @@
+@Metadata.layer: #CORE
+annotate entity Z8C_tech_hist
+    with 
+{
+@UI.facet: [ { id: 'TechDetail',
+                 purpose: #STANDARD,
+                 type: #IDENTIFICATION_REFERENCE,
+                 label: '직원 작업 일자 입력',
+                 position: 10 } ]
+
+  @EndUserText.label: '직원 코드'
+  @UI.lineItem:       [ { position: 10 } ]
+  @UI.identification: [ { position: 10 } ]
+  pernr;
+
+  @EndUserText.label: '이름'
+  @UI.lineItem:       [ { position: 20, cssDefault.width: '6rem'} ]
+  @UI.identification: [ { position: 20 } ]
+  emp_name;
+
+  @EndUserText.label: '부서(업장)'
+  @UI.lineItem:       [ { position: 30, cssDefault.width: '10rem' } ]
+  @UI.identification: [ { position: 30 } ]
+  branch_name;
+
+  @EndUserText.label: '등급'
+  @UI.lineItem:       [ { position: 40, cssDefault.width: '6rem' } ]
+  @UI.identification: [ { position: 40 } ]
+  emp_grade;
+
+  @EndUserText.label: '연락처'
+  @UI.lineItem:       [ { position: 50, cssDefault.width: '10rem' } ]
+  @UI.identification: [ { position: 50 } ]
+  emp_tel;
+
+  @EndUserText.label: '예정 투입 시작일'
+  @UI.lineItem:       [ { position: 60 } ]
+  @UI.identification: [ { position: 60 } ]
+  sdate;
+
+  @EndUserText.label: '예정 투입 종료일'
+  @UI.lineItem:       [ { position: 70 } ]
+  @UI.identification: [ { position: 70 } ]
+  edate;
+  
+  @EndUserText.label: '실제 투입 시작일'
+  @UI.lineItem:       [ { position: 80 } ]
+  @UI.identification: [ { position: 80 } ]
+  work_sdate;
+
+  @EndUserText.label: '실제 투입 종료일'
+  @UI.lineItem:       [ { position: 90 } ]
+  @UI.identification: [ { position: 90 } ]
+  work_edate;
+}

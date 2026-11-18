@@ -1,0 +1,8 @@
+@EndUserText.label: 'Project Service Def'
+define service Z8_projects {
+  expose z8c_projects;
+  expose Z8C_tech_hist;
+  expose z8R_plant_text;
+  expose z8r_Materials  as Materials;
+  expose z8i_deliv_text;
+}

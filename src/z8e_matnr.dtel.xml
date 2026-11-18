@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>Z8E_MATNR</ROLLNAME>
+    <DDLANGUAGE>3</DDLANGUAGE>
+    <DOMNAME>Z8D_MATNR</DOMNAME>
+    <HEADLEN>13</HEADLEN>
+    <SCRLEN1>08</SCRLEN1>
+    <SCRLEN2>13</SCRLEN2>
+    <SCRLEN3>13</SCRLEN3>
+    <DDTEXT>자재코드</DDTEXT>
+    <REPTEXT>자재 코드</REPTEXT>
+    <SCRTEXT_S>자재 코드</SCRTEXT_S>
+    <SCRTEXT_M>자재 코드</SCRTEXT_M>
+    <SCRTEXT_L>자재 코드</SCRTEXT_L>
+    <DTELMASTER>3</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>E</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DDTEXT>MAterial Code</DDTEXT>
+     <REPTEXT>Material Code</REPTEXT>
+     <SCRTEXT_S>Mat Code</SCRTEXT_S>
+     <SCRTEXT_M>Material Code</SCRTEXT_M>
+     <SCRTEXT_L>Material Code</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

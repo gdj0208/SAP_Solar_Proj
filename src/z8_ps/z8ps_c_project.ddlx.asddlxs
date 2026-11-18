@@ -1,0 +1,146 @@
+@Metadata.layer: #CORE
+@Search.searchable: true
+
+@UI: {
+    headerInfo: {
+        typeName: '인력 배정',
+        typeNamePlural: '프로젝트 인력배정 관리',
+
+        description: {
+            type: #STANDARD,
+            value: 'ProjectStatusName'
+        },
+
+        title: { type: #STANDARD, value: 'ProjectId' }
+    },
+    presentationVariant: [
+        {
+            sortOrder: [
+            {
+                by: 'StartDate',
+                direction: #DESC
+            }
+            ]
+        }
+    ]
+
+}
+
+annotate entity Z8PS_C_PROJECT with
+{
+
+  @UI.facet: [
+  {
+  // IDENTIFICATIN_REFRENCE: 현재 Project의 상세정보 영역
+  // LINEITEM_REFERENCE: 여러 건의 데이터가 나오는 테이블 영역
+  // targetElement: '_Tech' : Project -> TechHist Composition을 따라감
+
+      id:     'ProjectInfo',
+      purpose:  #STANDARD,
+      type:     #IDENTIFICATION_REFERENCE, // 화면에 어떤 필드를 띄울건지 identification으로 설정
+      label:    '프로젝트 정보',
+      position: 10
+    },
+  {// 이미 배정 완료된 기사 목록
+      id: 'AssignedTech',
+      purpose: #STANDARD,
+      type: #LINEITEM_REFERENCE,
+      label: '배정 인력',
+      position: 20,
+      targetElement: '_Tech',
+      hidden: #( HideAssignedTech )
+    },
+    {
+    id: 'AvailableInstall',
+    type: #LINEITEM_REFERENCE, //테이블 형태
+    label: '설치기사 가용인력',
+    position: 30,
+    targetElement: '_AvailableInstall', //Root Project의 _AvailableTech Association을 따라가서 데이터를 가져옴
+    hidden: #( HideAvailableTech )
+  },
+  {
+    id: 'AvailableElec',
+    type: #LINEITEM_REFERENCE,
+    label: '전기기사 가용인력',
+    position: 40,
+    targetElement: '_AvailableElec',
+    hidden: #( HideAvailableTech )
+  }
+  ]
+
+  @EndUserText.label: 'SO 번호'
+  @UI.lineItem: [{ position: 10 }]
+  SalesOrderId;
+
+
+  @UI.identification: [{ position: 10 }]
+  @EndUserText.label: '프로젝트'
+  @Search.defaultSearchElement: true //자유검색창
+  @Consumption.valueHelpDefinition: [{ // 필터 + Value Help
+  entity: {
+    name: 'Z8PS_VH_PROJECT',
+    element: 'ProjectId'
+  }
+  }]
+  @UI.selectionField: [{ position: 10 }]
+  @UI.lineItem: [{ position: 20 }]
+  ProjectId;
+
+
+  @EndUserText.label: '지사'
+  @UI.selectionField: [{ position: 20 }]
+  @Consumption.valueHelpDefinition: [{
+  entity: {
+      name: 'Z8_R_BRANCH',
+      element: 'BranchCode'
+  }
+  }]
+  BranchCode;
+
+  @UI.identification: [{ position: 20 }]
+  @EndUserText.label: '지사명'
+  @UI.lineItem: [{ position: 30 }]
+  BranchName;
+
+
+  @UI.identification: [{ position: 30 }]
+  @EndUserText.label: '고객명'
+  @UI.lineItem: [ { position: 40 } ]
+  CustomerName;
+
+  @EndUserText.label: '프로젝트 상태'
+  @UI.selectionField: [{ position: 30 }]
+  @Consumption.valueHelpDefinition: [{
+  entity: {
+      name: 'Z8PS_VH_STATUS',
+      element: 'ProjectStatus'
+  }
+  }]
+  ProjectStatus;
+
+  @EndUserText.label: '상태'
+  @UI.lineItem: [{ position: 50 }]
+  ProjectStatusName;
+
+  @EndUserText.label: '공사 시작 예정일'
+  @UI.lineItem: [ { position: 60 } ]
+  @UI.selectionField: [ { position: 80 } ]
+  @UI.identification: [{ position: 80 }]
+  StartDate;
+
+  @EndUserText.label: '설치면적(M2)'
+  @UI.identification: [{ position: 50 }]
+  TotalArea;
+
+  @UI.identification: [{ position: 60 }]
+  @EndUserText.label: '설치 용량(kWp)' //킬로와트 피크 ( 6000W = 6kWp )
+  CapacityKwp;
+
+  @EndUserText.label: '예상 공사일수'
+  @UI.identification: [{ position: 70 }]
+  WorkDays;
+
+  @EndUserText.label: '공사 종료 예정일'
+  @UI.identification: [{ position: 90 }]
+  EndDate;
+}

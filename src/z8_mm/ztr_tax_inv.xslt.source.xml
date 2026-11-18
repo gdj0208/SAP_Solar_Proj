@@ -1,0 +1,164 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates" xmlns:def="urn:kr:or:kec:standard:Tax:ReusableAggregateBusinessInformationEntitySchemaModule:1:0">
+
+  <tt:root name="DOC"/>
+
+  <tt:template>
+    <def:TaxInvoice tt:extensible="deep">
+
+      <!-- 1. 최상단 ExchangedDocument 블록 우회 -->
+      <def:ExchangedDocument tt:minOccurs="0">
+        <tt:skip/>
+      </def:ExchangedDocument>
+
+      <def:TaxInvoiceDocument tt:extensible="deep">
+        <def:IssueID>
+          <tt:value ref="DOC.ISSUE_ID"/>
+        </def:IssueID>
+        <!-- ★ 텍스트가 포함된 TypeCode 우회 (tt:skip 사용) -->
+        <def:TypeCode tt:minOccurs="0">
+          <tt:skip/>
+        </def:TypeCode>
+        <def:IssueDateTime>
+          <tt:value ref="DOC.BLDAT"/>
+        </def:IssueDateTime>
+      </def:TaxInvoiceDocument>
+
+      <def:TaxInvoiceTradeSettlement tt:extensible="deep">
+
+
+        <def:InvoicerParty tt:extensible="deep">
+          <def:ID>
+            <tt:value ref="DOC.INVOICER.ID"/>
+          </def:ID>
+          <def:TypeCode tt:minOccurs="0">
+            <tt:value ref="DOC.INVOICER.TYPE_CODE"/>
+          </def:TypeCode>
+          <def:NameText>
+            <tt:value ref="DOC.INVOICER.NAME_TEXT"/>
+          </def:NameText>
+          <def:ClassificationCode tt:minOccurs="0">
+            <tt:value ref="DOC.INVOICER.CLASS_CODE"/>
+          </def:ClassificationCode>
+
+          <def:SpecifiedOrganization tt:extensible="deep" tt:minOccurs="0">
+            <def:TaxRegistrationID tt:minOccurs="0">
+              <tt:value ref="DOC.INVOICER.TAX_REG_ID"/>
+            </def:TaxRegistrationID>
+          </def:SpecifiedOrganization>
+
+          <def:SpecifiedPerson tt:extensible="deep" tt:minOccurs="0">
+            <def:NameText tt:minOccurs="0">
+              <tt:value ref="DOC.INVOICER.PERSON_NAME"/>
+            </def:NameText>
+          </def:SpecifiedPerson>
+
+          <def:DefinedContact tt:extensible="deep" tt:minOccurs="0">
+            <def:URICommunication tt:minOccurs="0">
+              <tt:value ref="DOC.INVOICER.EMAIL"/>
+            </def:URICommunication>
+          </def:DefinedContact>
+
+          <def:SpecifiedAddress tt:extensible="deep" tt:minOccurs="0">
+            <def:LineOneText tt:minOccurs="0">
+              <tt:value ref="DOC.INVOICER.ADDRESS"/>
+            </def:LineOneText>
+          </def:SpecifiedAddress>
+        </def:InvoicerParty>
+
+
+
+        <def:InvoiceeParty tt:extensible="deep" >
+          <def:ID>
+            <tt:value ref="DOC.INVOICEE.ID"/>
+          </def:ID>
+          <def:TypeCode tt:minOccurs="0">
+            <tt:value ref="DOC.INVOICEE.TYPE_CODE"/>
+          </def:TypeCode>
+          <def:NameText>
+            <tt:value ref="DOC.INVOICEE.NAME_TEXT"/>
+          </def:NameText>
+          <def:ClassificationCode tt:minOccurs="0">
+            <tt:value ref="DOC.INVOICEE.CLASS_CODE"/>
+          </def:ClassificationCode>
+
+          <def:SpecifiedOrganization tt:extensible="deep" tt:minOccurs="0">
+            <def:TaxRegistrationID tt:minOccurs="0">
+              <tt:value ref="DOC.INVOICEE.TAX_REG_ID"/>
+            </def:TaxRegistrationID>
+          </def:SpecifiedOrganization>
+
+          <def:SpecifiedPerson tt:extensible="deep" tt:minOccurs="0">
+            <def:NameText tt:minOccurs="0">
+              <tt:value ref="DOC.INVOICEE.PERSON_NAME"/>
+            </def:NameText>
+          </def:SpecifiedPerson>
+
+          <!-- 공급받는자는 PrimaryDefinedContact 태그를 사용함 -->
+          <def:PrimaryDefinedContact tt:extensible="deep" tt:minOccurs="0">
+            <def:URICommunication tt:minOccurs="0">
+              <tt:value ref="DOC.INVOICEE.EMAIL"/>
+            </def:URICommunication>
+          </def:PrimaryDefinedContact>
+
+          <def:SecondaryDefinedContact tt:minOccurs="0"><tt:skip/></def:SecondaryDefinedContact>
+
+          <def:SpecifiedAddress tt:extensible="deep" tt:minOccurs="0">
+            <def:LineOneText tt:minOccurs="0">
+              <tt:value ref="DOC.INVOICEE.ADDRESS"/>
+            </def:LineOneText>
+          </def:SpecifiedAddress>
+        </def:InvoiceeParty>
+
+
+
+        <def:SpecifiedMonetarySummation tt:extensible="deep">
+          <def:ChargeTotalAmount>
+            <tt:value ref="DOC.NETWR"/>
+          </def:ChargeTotalAmount>
+          <def:TaxTotalAmount>
+            <tt:value ref="DOC.WMWST1"/>
+          </def:TaxTotalAmount>
+          <def:GrandTotalAmount>
+            <tt:value ref="DOC.RMWWR"/>
+          </def:GrandTotalAmount>
+        </def:SpecifiedMonetarySummation>
+      </def:TaxInvoiceTradeSettlement>
+
+      <tt:loop name="ITEM" ref="DOC.ITEMS">
+        <def:TaxInvoiceTradeLineItem tt:extensible="deep">
+          <def:SequenceNumeric>
+            <tt:value ref="$ITEM.SEQ"/>
+          </def:SequenceNumeric>
+          <def:InvoiceAmount>
+            <tt:value ref="$ITEM.WRBTR"/>
+          </def:InvoiceAmount>
+          <def:ChargeableUnitQuantity>
+            <tt:value ref="$ITEM.MENGE"/>
+          </def:ChargeableUnitQuantity>
+          <!-- ★ 품목 내 불필요 텍스트 태그들 우회 -->
+          <def:InformationText tt:minOccurs="0">
+            <tt:skip/>
+          </def:InformationText>
+          <def:NameText>
+            <tt:value ref="$ITEM.ITEM_TEXT"/>
+          </def:NameText>
+          <def:PurchaseExpiryDateTime tt:minOccurs="0">
+            <tt:skip/>
+          </def:PurchaseExpiryDateTime>
+          <def:TotalTax tt:minOccurs="0">
+            <tt:skip/>
+          </def:TotalTax>
+
+          <def:UnitPrice tt:extensible="deep">
+            <def:UnitAmount>
+              <tt:value ref="$ITEM.UPRICE"/>
+            </def:UnitAmount>
+          </def:UnitPrice>
+        </def:TaxInvoiceTradeLineItem>
+      </tt:loop>
+
+    </def:TaxInvoice>
+  </tt:template>
+
+</tt:transform>

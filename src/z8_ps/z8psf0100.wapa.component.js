@@ -1,0 +1,2 @@
+sap.ui.define(["sap/fe/core/AppComponent"],function(e){"use strict";return e.extend("z8.ps.z8psf0100.Component",{metadata:{manifest:"json"}})});                                                                                                               
+//# sourceMappingURL=Component.js.map                                                                                                                                                                                                                          

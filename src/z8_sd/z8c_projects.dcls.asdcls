@@ -1,0 +1,6 @@
+@EndUserText.label: '프로젝트 조회 권한 (Projection)'
+@MappingRole: true
+define role Z8C_PROJECTS {
+  grant select on z8c_projects
+    where inheriting conditions from entity z8r_projects;
+}

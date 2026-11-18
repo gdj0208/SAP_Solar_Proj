@@ -1,0 +1,25 @@
+@Metadata.layer: #CORE
+
+annotate entity Z8PS_R_AVAILABLE_TECH_OP with
+{
+
+  @UI.lineItem: [{ position: 10, label: '사원번호' }]
+  PersonalNumber;
+
+  @UI.lineItem: [{ position: 20, label: '소속 지사' }]
+  BranchName;
+
+  @UI.lineItem: [{ position: 20, label: '이름' }]
+  Ename;
+
+  @UI.lineItem: [{ position: 30, label: '직무' }]
+  Stell;
+
+  @UI.lineItem: [{ position: 40, label: '등급' }]
+  Grade;
+
+  @UI.lineItem: [{ position: 50, label: '생산성' }]
+  Capacity;
+
+
+}
