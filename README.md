@@ -5,7 +5,7 @@
  
 | 항목 | 내용 |
 |---|---|
-| 기간 | 2026.09 ~ 2026.11 |
+| 기간 | 2026.09.07 ~ 2026.11.08 |
 | 인원 | 5명 |
 | 모듈 | SD · PS · MM · FI · CO |
 | 개발 환경 | SAP ABAP (Dynpro, OO ALV), RAP · CDS · Fiori Elements, abapGit |
