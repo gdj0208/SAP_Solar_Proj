@@ -5,7 +5,7 @@
  
 | 항목 | 내용 |
 |---|---|
-| 기간 | 2026.09 ~ 2026.11 |
+| 기간 | 2026.09.07 ~ 2026.11.08 |
 | 인원 | 5명 |
 | 모듈 | SD · PS · MM · FI · CO |
 | 개발 환경 | SAP ABAP (Dynpro, OO ALV), RAP · CDS · Fiori Elements, abapGit |
@@ -192,21 +192,5 @@ SAP_Solar_Proj/
     └── Video/                    # 시연 영상
 ```
  
----
- 
-## ⚙️ 소스 가져오기 (abapGit)
- 
-> 이 프로젝트는 교육용 SAP 서버에서 개발되었으며, 서버 종료 후에는 실행 화면을 문서와 영상으로 확인할 수 있습니다.
- 
-1. 대상 SAP 시스템에 [abapGit](https://abapgit.org)을 설치합니다(standalone 버전 `ZABAPGIT_STANDALONE`).
-2. 다음 중 한 가지 방법으로 가져옵니다.
-   - **Online**: 시스템이 인터넷에 연결되어 있다면 이 레포 URL로 New Online Repository를 만들고 Pull
-   - **Offline**: 이 레포를 zip으로 내려받아 New Offline Repository로 Import
-3. 패키지를 지정해 오브젝트를 활성화합니다.
-**전제 조건**
-- ABAP 7.52 이상 (ABAP SQL 신문법, CTE, 내부 테이블 대상 SELECT 사용)
-- `Z8R_PROJECTS`는 RAP Managed BO와 Fiori Elements를 지원하는 S/4HANA 환경 필요 (서비스 정의 · 바인딩은 별도 생성)
-- 프로그램 실행에는 마스터 데이터(자재, 플랜트, 공급사, 고객, 사원, 지사)와 번호 범위, 권한 오브젝트, 메시지 클래스(`Z8_MSG`)가 필요합니다.
----
- 
+
  
